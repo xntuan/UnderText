@@ -5,252 +5,319 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tips & Tricks - UnderText</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f5f5f7;
-            padding: 20px;
-        }
-        .container {
             max-width: 800px;
             margin: 0 auto;
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            color: #333;
         }
         h1 {
-            color: #1d1d1f;
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            color: #86868b;
-            font-size: 18px;
-            margin-bottom: 30px;
+            color: #007AFF;
+            border-bottom: 2px solid #007AFF;
+            padding-bottom: 10px;
         }
         h2 {
-            color: #1d1d1f;
-            font-size: 24px;
-            font-weight: 600;
-            margin-top: 40px;
-            margin-bottom: 15px;
+            color: #555;
+            margin-top: 30px;
         }
         h3 {
-            color: #1d1d1f;
-            font-size: 18px;
-            font-weight: 600;
+            color: #666;
             margin-top: 20px;
-            margin-bottom: 10px;
         }
-        p, li {
-            margin-bottom: 15px;
-            color: #1d1d1f;
+        .tip {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 4px solid #4caf50;
+            margin: 20px 0;
         }
-        ol, ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
+        .code-example {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-left: 4px solid #007AFF;
+            font-family: monospace;
+            margin: 15px 0;
+        }
+        ul {
+            margin: 10px 0;
         }
         li {
-            margin-bottom: 10px;
-        }
-        .tip-box {
-            background: #e8f5e9;
-            border-left: 4px solid #4caf50;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        .tip-box h3 {
-            margin-top: 0;
-            color: #2e7d32;
-        }
-        .example-box {
-            background: #f5f5f7;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 8px;
-            font-family: monospace;
-            border-left: 3px solid #0071e3;
-        }
-        .example-label {
-            font-weight: 600;
-            color: #0071e3;
-            margin-bottom: 5px;
-        }
-        .footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #d2d2d7;
-            text-align: center;
-            color: #86868b;
-            font-size: 14px;
+            margin: 8px 0;
         }
         a {
-            color: #0071e3;
+            color: #007AFF;
             text-decoration: none;
         }
         a:hover {
             text-decoration: underline;
         }
-        .emoji {
-            font-size: 24px;
-            margin-right: 10px;
+        .footer {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #888;
+        }
+        .warning {
+            background-color: #fff3cd;
+            padding: 10px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        .feature-box {
+            background-color: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Tips & Tricks</h1>
-        <p class="subtitle">Get the most out of UnderText for language learning</p>
+    <h1>Tips & Tricks</h1>
+    <p>Get the most out of UnderText with these helpful tips and features!</p>
 
-        <h2><span class="emoji">💾</span>Saving Sentences to Flashcards</h2>
-        <p>Build your vocabulary by saving translations as you chat!</p>
-        <ol>
-            <li>Type your message in the keyboard</li>
-            <li>See the translation appear at the top of the keyboard</li>
-            <li>Tap on any word(s) in the translation to select them</li>
-            <li>Tap the <strong>⭐ Star icon (Learn button)</strong> that appears</li>
-            <li>The <strong>entire sentence pair</strong> is now saved to your flashcards!</li>
-        </ol>
+    <h2>⌨️ Keyboard Layouts</h2>
+    <p>UnderText supports <strong>6 different keyboard layouts</strong> to match your language and typing preferences:</p>
 
-        <div class="tip-box">
-            <h3>💡 Pro Tip</h3>
-            <p>UnderText always saves the <strong>complete sentence pair</strong> (your full input + full translation), not individual words. This is perfect for learning phrases in context and seeing how words are used naturally!</p>
-        </div>
-
-        <h2><span class="emoji">📚</span>Accessing Your Flashcards</h2>
-        <p>Review your saved vocabulary anytime:</p>
-        <ol>
-            <li>Open the <strong>UnderText main app</strong> (not the keyboard)</li>
-            <li>Tap on <strong>"Flashcards"</strong> tab at the bottom (star icon)</li>
-            <li>You'll see all your saved sentence pairs organized by language</li>
-            <li>Tap <strong>"Review"</strong> in the top-right corner to start studying</li>
-            <li>Tap cards to flip and see the translation</li>
-            <li>Rate your memory: Again, Hard, Good, or Easy</li>
-        </ol>
-
-        <div class="tip-box">
-            <h3>💡 Spaced Repetition</h3>
-            <p>UnderText uses an intelligent review system. Cards you find difficult will appear more frequently, while easy cards appear less often. This maximizes your learning efficiency!</p>
-        </div>
-
-        <h2><span class="emoji">🔄</span>Using Back-Translation to Verify</h2>
-        <p>Double-check your translations to make sure they're accurate!</p>
-
-        <h3>How to Back-Translate (Verify Your Translation):</h3>
-        <ol>
-            <li>After translating, tap the <strong>chevron-down arrow</strong> to expand the translation pane</li>
-            <li><strong>Without selecting any word</strong>, tap the <strong>📖 Define button</strong> at the bottom</li>
-            <li>The full sentence translates back to your original language</li>
-            <li>Compare it with what you originally typed to verify accuracy</li>
-        </ol>
-
-        <div class="example-box">
-            <div class="example-label">Example:</div>
-            <strong>You typed:</strong> "hello"<br>
-            <strong>Translation:</strong> "xin chào"<br>
-            <strong>Back-translation:</strong> "xin chào" → "hello" (verified! ✓)
-        </div>
-
-        <div class="tip-box">
-            <h3>💡 Why Back Translation?</h3>
-            <p>Sometimes translations can have slightly different meanings or nuances. Back translation helps you confirm that the translation accurately captures what you meant to say.</p>
-        </div>
-
-        <h2><span class="emoji">🔀</span>Language Selection & Quick Switch</h2>
-        <p>Control which languages you're translating between!</p>
-
-        <h3>Setting Your Main Languages:</h3>
-        <ol>
-            <li>Open the <strong>UnderText main app</strong></li>
-            <li>Tap the <strong>Settings tab</strong> at the bottom</li>
-            <li>Find the <strong>"Languages"</strong> section at the top</li>
-            <li>Choose <strong>"From"</strong> (your input/typing language)</li>
-            <li>Choose <strong>"To"</strong> (the language you're learning)</li>
-            <li>Tap the <strong>swap button (↕)</strong> to quickly reverse direction</li>
-        </ol>
-
-        <h3>Quick Language Switch (Advanced):</h3>
-        <p>Switch languages while typing without leaving the keyboard!</p>
-        <ol>
-            <li>In the main app, enable <strong>"Quick Language Switch"</strong> toggle</li>
-            <li>Configure your switch codes (default: <code>vnn</code> = Vietnamese, <code>enn</code> = English, etc.)</li>
-            <li>While typing, type the code (like <code>vnn</code>) to switch to that language</li>
-            <li>Visual feedback appears showing your current language</li>
-            <li>The keyboard layout and Telex automatically adjust</li>
-        </ol>
-
-        <h2><span class="emoji">✏️</span>Learning by Typing Imperfect Sentences</h2>
-        <p>Don't worry about perfect grammar - UnderText helps you learn naturally!</p>
-
-        <h3>The Power of Broken Sentences:</h3>
-        <p>You can type incomplete or mixed sentences, and UnderText will show you the correct version. This is how you learn naturally - by seeing corrections in real-time.</p>
-
-        <h3>Examples of Learning Patterns:</h3>
-
-        <div class="example-box">
-            <div class="example-label">Pattern 1: Mix Languages</div>
-            <strong>You type:</strong> "I want ăn cơm"<br>
-            <strong>Output shows:</strong> "Tôi muốn ăn cơm"<br>
-            <strong>You learn:</strong> "I" → "Tôi", "want" → "muốn"
-        </div>
-
-        <div class="example-box">
-            <div class="example-label">Pattern 2: Simple Words</div>
-            <strong>You type:</strong> "me go market"<br>
-            <strong>Output shows:</strong> "Tôi đi chợ"<br>
-            <strong>You learn:</strong> Proper sentence structure
-        </div>
-
-        <div class="example-box">
-            <div class="example-label">Pattern 3: Wrong Grammar</div>
-            <strong>You type:</strong> "tôi đi đến chợ" (extra word)<br>
-            <strong>Translation button corrects:</strong> "I go to the market"<br>
-            <strong>You learn:</strong> More natural phrasing
-        </div>
-
-        <div class="tip-box">
-            <h3>💡 Best Learning Method</h3>
-            <p><strong>Daily Practice:</strong></p>
-            <ol>
-                <li>Use the keyboard in your real conversations (WhatsApp, Messages, etc.)</li>
-                <li>Type naturally, even if you make mistakes</li>
-                <li>Watch the real-time translation as you type</li>
-                <li>Save interesting words to flashcards</li>
-                <li>Review flashcards before bed (spaced repetition works!)</li>
-                <li>Use back translation to verify meanings</li>
-            </ol>
-            <p><strong>Result:</strong> You learn vocabulary in context, which is 10x more effective than memorizing lists!</p>
-        </div>
-
-        <h2><span class="emoji">⚡</span>Quick Tips Summary</h2>
+    <div class="feature-box">
+        <h3>Available Layouts:</h3>
         <ul>
-            <li><strong>Save full sentences:</strong> Select any word and tap the ⭐ star icon - it saves the entire sentence pair, perfect for learning in context</li>
-            <li><strong>Review daily:</strong> Tap the "Flashcards" tab and use the spaced repetition system</li>
-            <li><strong>Don't be perfect:</strong> Type broken sentences - seeing corrections helps you learn faster</li>
-            <li><strong>Verify translations:</strong> Expand the translation pane and tap 📖 Define (without selecting words) to back-translate and verify accuracy</li>
-            <li><strong>Quick language switch:</strong> Enable Quick Language Switch in settings to use codes while typing</li>
-            <li><strong>Practice everywhere:</strong> Use UnderText in all your messaging apps for natural learning</li>
-            <li><strong>Learn in context:</strong> Full sentence pairs help you understand how words are actually used in real conversation</li>
+            <li><strong>QWERTY</strong> - English and International (most common)</li>
+            <li><strong>QWERTZ</strong> - German keyboard layout (Z and Y swapped)</li>
+            <li><strong>AZERTY</strong> - French keyboard layout</li>
+            <li><strong>Spanish QWERTY</strong> - Spanish-specific layout</li>
+            <li><strong>Korean Dubeolsik (두벌식)</strong> - Standard Korean layout</li>
+            <li><strong>Vietnamese Telex</strong> - Vietnamese typing with tone marks</li>
         </ul>
+    </div>
 
-        <h2><span class="emoji">🎯</span>Learning Philosophy</h2>
-        <p>UnderText is designed around one core idea: <strong>learn by doing, not by memorizing</strong>.</p>
-        <p>Instead of studying vocabulary lists, you learn words naturally as you use them in real conversations. The keyboard shows you corrections in real-time, and you can save words that matter to you. This creates stronger neural connections because you're learning in context, with emotion, and with purpose.</p>
-        <p>Keep typing, keep chatting, keep learning! 🚀</p>
+    <div class="tip">
+        <strong>💡 Tip:</strong> Change your keyboard layout in Settings → Keyboard Layout. The layout persists across all apps.
+    </div>
 
-        <div class="footer">
-            <p>&copy; 2025 UnderText. All rights reserved.</p>
-            <p><a href="index.html">Home</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="support.html">Support</a> | <a href="tips.html">Tips & Tricks</a></p>
-        </div>
+    <h2>🇻🇳 Vietnamese Telex Input</h2>
+    <p>UnderText includes a full-featured Vietnamese Telex input system with smart auto-corrections:</p>
+
+    <h3>Tone Marks</h3>
+    <div class="code-example">
+        a + s → á (acute/sắc)<br>
+        a + f → à (grave/huyền)<br>
+        a + r → ả (hook/hỏi)<br>
+        a + x → ã (tilde/ngã)<br>
+        a + j → ạ (dot below/nặng)
+    </div>
+
+    <h3>Special Characters</h3>
+    <div class="code-example">
+        a + a → â (circumflex)<br>
+        a + w → ă (breve)<br>
+        e + e → ê<br>
+        o + o → ô<br>
+        o + w → ơ<br>
+        u + w → ư<br>
+        d + d → đ<br>
+        <strong>w alone → ư</strong> (standalone w transforms to ư)
+    </div>
+
+    <h3>Smart Auto-Correction</h3>
+    <p>UnderText automatically corrects <strong>ưo → ươ</strong> when followed by valid syllable endings:</p>
+    <div class="code-example">
+        luongw → lương ✓<br>
+        luwong → lương ✓ (works both ways!)<br>
+        tuwoi → tươi ✓<br>
+        ruwou → rượu ✓<br>
+        lwon → lươn ✓<br>
+        cwops → cướp ✓
+    </div>
+
+    <div class="tip">
+        <strong>💡 Smart Detection:</strong> The auto-correction only applies when followed by i, u, n, p, c, t, m (valid Vietnamese syllable patterns). Tone marks are preserved during transformation!
+    </div>
+
+    <h2>🌍 Translation Modes</h2>
+
+    <h3>Free Tier: Button Translation</h3>
+    <ul>
+        <li>5 Apple translations per day</li>
+        <li>Tap the "Translate" button when ready</li>
+        <li>Quota resets daily at midnight</li>
+        <li>Badge shows "Free (X/5)" with remaining uses</li>
+    </ul>
+
+    <h3>Premium: Real-Time Translation</h3>
+    <ul>
+        <li>Translates automatically as you type</li>
+        <li>300ms delay for smooth performance</li>
+        <li>Unlimited Apple translations</li>
+        <li>Optional Azure OpenAI support (requires your API key)</li>
+    </ul>
+
+    <div class="tip">
+        <strong>💡 Upgrade Tip:</strong> Tap the ribbon banner or gear icon → Premium section to subscribe. Yearly plan ($24/year) includes a 3-day FREE trial!
+    </div>
+
+    <h2>📚 Word Learning Features</h2>
+
+    <h3>Interactive Word Actions</h3>
+    <p>Tap any translated word to access powerful learning tools:</p>
+    <ul>
+        <li><strong>🔊 Speak</strong> - Hear correct pronunciation (native speaker voice)</li>
+        <li><strong>📋 Copy</strong> - Copy word to clipboard</li>
+        <li><strong>📖 Dictionary</strong> - Look up definition and usage</li>
+        <li><strong>⭐ Learn</strong> - Add to flashcard deck for review</li>
+    </ul>
+
+    <h3>Flashcard System</h3>
+    <p><strong>UnderText saves complete sentence pairs</strong>, not individual words. This helps you learn vocabulary in context!</p>
+
+    <div class="code-example">
+        <strong>Example:</strong><br>
+        You type: "How are you?"<br>
+        Translation: "¿Cómo estás?"<br>
+        Tap "estás" → ⭐ Learn<br>
+        <br>
+        <strong>Saved flashcard:</strong><br>
+        Front: "How are you?"<br>
+        Back: "¿Cómo estás?"
+    </div>
+
+    <h3>Flashcard Review (Spaced Repetition)</h3>
+    <ol>
+        <li>Open the main UnderText app</li>
+        <li>Go to the <strong>Flashcards</strong> tab</li>
+        <li>Tap a card to flip and reveal the translation</li>
+        <li>Rate your retention: <strong>Again</strong> / <strong>Hard</strong> / <strong>Good</strong> / <strong>Easy</strong></li>
+        <li>Difficult cards appear more frequently</li>
+    </ol>
+
+    <div class="tip">
+        <strong>💡 Learning Philosophy:</strong> Learn words naturally as you use them in real conversations. The complete sentence context helps you remember how words are actually used!
+    </div>
+
+    <h2>🔄 Language Switching</h2>
+
+    <h3>Manual Method (Settings)</h3>
+    <ul>
+        <li>Tap the ⚙️ gear icon in the keyboard</li>
+        <li>Select "From" and "To" languages</li>
+        <li>Use the ↔️ swap button to reverse direction</li>
+    </ul>
+
+    <h3>Quick Switch (Language Codes)</h3>
+    <p>Type language codes while in the keyboard to instantly switch:</p>
+    <div class="code-example">
+        vnn → Switches to Vietnamese<br>
+        enn → Switches to English<br>
+        frn → Switches to French<br>
+        spn → Switches to Spanish
+    </div>
+
+    <div class="tip">
+        <strong>💡 Productivity Boost:</strong> Quick codes save time when chatting with multilingual friends!
+    </div>
+
+    <h2>✓ Back-Translation Verification</h2>
+    <p>Want to confirm your translation is accurate? Use back-translation:</p>
+    <ol>
+        <li>After translating, expand the translation pane (swipe up)</li>
+        <li>Tap the <strong>Define</strong> button (don't select any word)</li>
+        <li>UnderText reverse-translates the result back to your original language</li>
+        <li>Compare to verify accuracy</li>
+    </ol>
+
+    <div class="code-example">
+        <strong>Example:</strong><br>
+        English → Spanish: "I love you" → "Te amo"<br>
+        Back-translation: "Te amo" → "I love you" ✓ Accurate!
+    </div>
+
+    <h2>🎨 Customization Options</h2>
+
+    <h3>Keyboard Settings (Gear Icon)</h3>
+    <ul>
+        <li><strong>Keyboard Layout</strong> - Choose from 6 layouts</li>
+        <li><strong>Translation Service</strong> - Apple Translation or Azure OpenAI (Premium)</li>
+        <li><strong>Haptic Feedback</strong> - Enable/disable key press vibration</li>
+        <li><strong>Key Press Sound</strong> - Enable/disable typing sounds</li>
+        <li><strong>Auto-Capitalization</strong> - Automatic sentence capitalization</li>
+        <li><strong>Auto-Correction</strong> - Smart spelling fixes</li>
+    </ul>
+
+    <h3>Main App Settings</h3>
+    <ul>
+        <li><strong>Default Languages</strong> - Set preferred From/To languages</li>
+        <li><strong>API Keys</strong> - Configure Azure OpenAI (Premium, optional)</li>
+        <li><strong>Subscription Management</strong> - View plan and upgrade options</li>
+    </ul>
+
+    <h2>🔒 Privacy & Full Access</h2>
+
+    <div class="warning">
+        <strong>Why Full Access is Required:</strong>
+        <ul>
+            <li>Network access for Azure OpenAI (only if you configure it)</li>
+            <li>On-device Apple Translation (iOS 26.0+)</li>
+            <li>Speech synthesis for pronunciation</li>
+            <li>Dictionary API for definitions</li>
+        </ul>
+        <p><strong>We do NOT track, log, or store anything you type.</strong> See our <a href="privacy.html">Privacy Policy</a> for complete details.</p>
+    </div>
+
+    <h2>💰 Subscription Plans</h2>
+
+    <h3>Free Tier</h3>
+    <ul>
+        <li>5 Apple translations per day (button-only)</li>
+        <li>All 20 languages supported</li>
+        <li>Vocabulary flashcards</li>
+        <li>All 6 keyboard layouts</li>
+    </ul>
+
+    <h3>Premium ($3/month or $24/year)</h3>
+    <ul>
+        <li>Real-time translation as you type (300ms delay)</li>
+        <li>More daily translations (token-based)</li>
+        <li>Unlimited Apple Translation</li>
+        <li>Azure OpenAI GPT-4o-mini support (requires your API key)</li>
+        <li>Priority support</li>
+    </ul>
+
+    <div class="tip">
+        <strong>💡 Best Deal:</strong> Yearly plan ($24/year) includes a 3-day FREE trial and saves 33% vs monthly!
+    </div>
+
+    <h2>🆘 Troubleshooting</h2>
+
+    <h3>Translation Not Working?</h3>
+    <ol>
+        <li>Verify iOS version is 26.0+ (Settings → General → About)</li>
+        <li>Enable Full Access: iOS Settings → General → Keyboard → UnderText → Allow Full Access</li>
+        <li>Download language models: iOS Settings → General → Language & Region</li>
+        <li>Check internet connection (for Azure OpenAI only)</li>
+    </ol>
+
+    <h3>Keyboard Not Showing Up?</h3>
+    <ol>
+        <li>Go to iOS Settings → General → Keyboard → Keyboards</li>
+        <li>Tap "Add New Keyboard"</li>
+        <li>Select "UnderText"</li>
+        <li>Enable "Allow Full Access"</li>
+    </ol>
+
+    <h3>Free Tier Quota Used Up?</h3>
+    <ul>
+        <li>Quota resets daily at midnight</li>
+        <li>Upgrade to Premium for unlimited Apple translations</li>
+        <li>Check remaining quota in the keyboard ribbon banner</li>
+    </ul>
+
+    <h2>📧 Need More Help?</h2>
+    <p>Visit our <a href="support.html">Support Page</a> or contact us at <a href="mailto:xntuan@icloud.com">xntuan@icloud.com</a></p>
+
+    <div class="footer">
+        <p><a href="index.html">Home</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="support.html">Support</a></p>
+        <p>&copy; 2025 UnderText. All rights reserved.</p>
     </div>
 </body>
 </html>

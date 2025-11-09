@@ -10,255 +10,525 @@
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
             color: #333;
-            background: #f5f5f7;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             padding: 20px;
         }
+
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             background: white;
             padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
         }
+
         h1 {
-            color: #1d1d1f;
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 30px;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 2.5em;
         }
+
         h2 {
-            color: #1d1d1f;
-            font-size: 24px;
-            font-weight: 600;
+            color: #667eea;
             margin-top: 30px;
             margin-bottom: 15px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
         }
+
         h3 {
-            color: #1d1d1f;
-            font-size: 18px;
-            font-weight: 600;
+            color: #764ba2;
             margin-top: 20px;
             margin-bottom: 10px;
+            font-size: 1.3em;
         }
-        p, li {
+
+        p {
             margin-bottom: 15px;
-            color: #1d1d1f;
+            color: #555;
         }
-        ul {
-            margin-left: 20px;
-            margin-bottom: 20px;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        .contact-box {
-            background: #f0f9ff;
-            border: 2px solid #0071e3;
-            padding: 25px;
-            margin: 30px 0;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .contact-box h2 {
-            margin-top: 0;
-            color: #0071e3;
-        }
-        .email {
-            font-size: 20px;
-            font-weight: 600;
-            color: #0071e3;
-            margin: 15px 0;
-        }
-        .faq {
-            background: #f5f5f7;
+
+        .faq-item {
+            background: #f8f9fa;
             padding: 20px;
             margin: 15px 0;
-            border-radius: 8px;
-            border-left: 4px solid #0071e3;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
         }
-        .faq h3 {
-            margin-top: 0;
-            color: #0071e3;
+
+        .faq-question {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
         }
+
+        .faq-answer {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .contact-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: white;
+            border: none;
+            margin: 0 0 15px 0;
+        }
+
+        .contact-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 20px;
+        }
+
+        .contact-box a {
+            color: white;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            border: 2px solid white;
+        }
+
+        .contact-box a:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .highlight {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            color: #d63384;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin: 8px 0;
+            color: #555;
+        }
+
         .footer {
+            text-align: center;
             margin-top: 40px;
             padding-top: 20px;
-            border-top: 1px solid #d2d2d7;
-            text-align: center;
-            color: #86868b;
-            font-size: 14px;
+            border-top: 1px solid #dee2e6;
+            color: #6c757d;
         }
-        a {
-            color: #0071e3;
+
+        .footer a {
+            color: #667eea;
             text-decoration: none;
+            margin: 0 10px;
         }
-        a:hover {
+
+        .footer a:hover {
             text-decoration: underline;
-        }
-        .response-time {
-            background: #e8f5e9;
-            border-left: 4px solid #4caf50;
-            padding: 15px;
-            margin: 20px 0;
-            border-radius: 4px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Support</h1>
-
-        <p>Need help with UnderText? We're here to assist you! Whether you have questions about features, subscriptions, or technical issues, we'll get you sorted out.</p>
+        <h1>📞 Support & FAQs</h1>
+        <p style="color: #888; margin-bottom: 30px;">Get help with UnderText</p>
 
         <div class="contact-box">
-            <h2>Contact Us</h2>
-            <p>For support inquiries, please email us at:</p>
-            <div class="email">
-                <a href="mailto:xntuan@icloud.com">xntuan@icloud.com</a>
+            <h2>Need Help?</h2>
+            <p>Our support team is here to assist you</p>
+            <a href="mailto:xntuan@icloud.com">Contact Support: xntuan@icloud.com</a>
+            <p style="margin-top: 15px; font-size: 0.9em;">Response time: 24-48 hours</p>
+        </div>
+
+        <h2>🔧 Setup & Installation</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ How do I enable the UnderText keyboard?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Open the <strong>Settings</strong> app on your iPhone</li>
+                    <li>Go to <strong>General</strong> → <strong>Keyboard</strong> → <strong>Keyboards</strong></li>
+                    <li>Tap <strong>"Add New Keyboard..."</strong></li>
+                    <li>Select <strong>"UnderText"</strong> from the list</li>
+                    <li>When typing, press and hold the 🌐 globe icon to switch to UnderText</li>
+                </ol>
             </div>
-            <div class="response-time">
-                <p><strong>Response Time:</strong> We typically respond within 24-48 hours</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ Why does UnderText need "Full Access"?</div>
+            <div class="faq-answer">
+                <p>Full Access permission is required for:</p>
+                <ul>
+                    <li><strong>AI Translation</strong>: Network access for Azure OpenAI (only if you configure your API key)</li>
+                    <li><strong>On-Device Translation</strong>: Apple Translation framework (works offline, iOS 26.0+)</li>
+                    <li><strong>Word Pronunciation</strong>: On-device speech synthesis</li>
+                    <li><strong>Dictionary Lookup</strong>: Word definition API access</li>
+                </ul>
+                <div class="highlight">
+                    <strong>Privacy Guarantee:</strong> UnderText does NOT track, log, or collect your keystrokes. We do not have servers or analytics. Your data stays on your device.
+                </div>
             </div>
         </div>
 
-        <h2>Frequently Asked Questions</h2>
-
-        <div class="faq">
-            <h3>How do I enable the keyboard?</h3>
-            <p><strong>Answer:</strong></p>
-            <ol>
-                <li>Open iOS Settings > General > Keyboard > Keyboards</li>
-                <li>Tap "Add New Keyboard"</li>
-                <li>Select "UnderText"</li>
-                <li>Enable "Allow Full Access" for translation features</li>
-            </ol>
+        <div class="faq-item">
+            <div class="faq-question">❓ What iOS version do I need?</div>
+            <div class="faq-answer">
+                <p>UnderText requires <strong>iOS 26.0 or later</strong> to use the latest Apple Translation API.</p>
+                <p>This ensures the best translation quality and privacy with on-device processing.</p>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>Why does the app need Full Access?</h3>
-            <p><strong>Answer:</strong> Full Access is required for:</p>
-            <ul>
-                <li>Real-time translation as you type</li>
-                <li>Translation button functionality</li>
-                <li>Connecting to AI translation services</li>
-            </ul>
-            <p><strong>Privacy Note:</strong> We do NOT collect, store, or transmit your keystrokes. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+        <h2>💳 Subscription & Pricing</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ What's included in the free tier?</div>
+            <div class="faq-answer">
+                <p>Free users get:</p>
+                <ul>
+                    <li><strong>5 translations per day</strong> (using Apple Translation)</li>
+                    <li>Button-triggered translation (tap translate button)</li>
+                    <li>Vietnamese Telex input</li>
+                    <li>All keyboard layouts</li>
+                    <li>Vocabulary flashcards</li>
+                </ul>
+                <p>The quota resets daily at midnight.</p>
+                <div class="note">
+                    <strong>Note:</strong> Real-time translation (as you type) is Premium only.
+                </div>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>How does the 3-day free trial work?</h3>
-            <p><strong>Answer:</strong></p>
-            <ul>
-                <li>Trial starts automatically on first app launch</li>
-                <li>No payment information required</li>
-                <li>Full access to all premium features for 3 days</li>
-                <li>After trial expires, translation features are locked</li>
-                <li>Subscribe anytime to unlock features again</li>
-            </ul>
+        <div class="faq-item">
+            <div class="faq-question">❓ How much does Premium cost?</div>
+            <div class="faq-answer">
+                <p>We offer two subscription options:</p>
+                <ul>
+                    <li><strong>Monthly</strong>: $3/month (no trial, start immediately)</li>
+                    <li><strong>Yearly</strong>: $24/year (3-day FREE trial, save 33%!)</li>
+                </ul>
+                <p><strong>Premium Features:</strong></p>
+                <ul>
+                    <li>✅ Live translation as you type (real-time, 300ms delay)</li>
+                    <li>✅ More daily translations (token-based quota)</li>
+                    <li>✅ Azure OpenAI GPT-4o-mini (optional, requires your API key)</li>
+                    <li>✅ Apple Translation unlimited</li>
+                    <li>✅ All keyboard customization options</li>
+                    <li>✅ Priority support</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>How do I subscribe to Premium?</h3>
-            <p><strong>Answer:</strong></p>
-            <ol>
-                <li>Open the UnderText main app</li>
-                <li>Tap "Upgrade to Premium" in Settings</li>
-                <li>Choose the yearly subscription ($39/year)</li>
-                <li>Confirm purchase with Apple App Store</li>
-            </ol>
+        <div class="faq-item">
+            <div class="faq-question">❓ How does the 3-day free trial work?</div>
+            <div class="faq-answer">
+                <p>The <strong>yearly subscription ($24/year)</strong> includes a 3-day free trial:</p>
+                <ul>
+                    <li>Start the trial → Get instant Premium access</li>
+                    <li>Use all Premium features for 3 days</li>
+                    <li>Cancel anytime during the trial → $0 charged</li>
+                    <li>After 3 days → Auto-renews at $24/year if not canceled</li>
+                </ul>
+                <div class="note">
+                    <strong>Note:</strong> Monthly subscription ($3/month) has no trial - you start paying immediately.
+                </div>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>How do I cancel my subscription?</h3>
-            <p><strong>Answer:</strong></p>
-            <ol>
-                <li>Open iOS Settings > [Your Name] > Subscriptions</li>
-                <li>Select "UnderText"</li>
-                <li>Tap "Cancel Subscription"</li>
-            </ol>
-            <p><strong>Note:</strong> You'll continue to have access until the end of your billing period.</p>
+        <div class="faq-item">
+            <div class="faq-question">❓ How do I cancel my subscription?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Open <strong>Settings</strong> on your iPhone</li>
+                    <li>Tap your name at the top</li>
+                    <li>Tap <strong>Subscriptions</strong></li>
+                    <li>Select <strong>UnderText</strong></li>
+                    <li>Tap <strong>Cancel Subscription</strong></li>
+                </ol>
+                <p>Your Premium access continues until the end of the current billing period.</p>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>How do I set up Microsoft Translator API?</h3>
-            <p><strong>Answer:</strong></p>
-            <ol>
-                <li>Go to <a href="https://portal.azure.com/#create/Microsoft.CognitiveServicesTextTranslation" target="_blank">Azure Portal</a></li>
-                <li>Create a free Translator resource</li>
-                <li><strong>Important:</strong> Choose "Global" for the region</li>
-                <li>Go to "Keys and Endpoint" section</li>
-                <li>Copy "Key 1"</li>
-                <li>Paste it in UnderText Settings > AI & Translation > Microsoft Translator</li>
-            </ol>
-            <p><strong>Free tier:</strong> 2 million characters per month</p>
+        <div class="faq-item">
+            <div class="faq-question">❓ Can I get a refund?</div>
+            <div class="faq-answer">
+                <p>Refunds are handled by Apple, not UnderText:</p>
+                <ol>
+                    <li>Go to <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+                    <li>Sign in with your Apple ID</li>
+                    <li>Find your UnderText subscription</li>
+                    <li>Request a refund</li>
+                </ol>
+                <p>Apple typically responds within 48 hours.</p>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>How do I set up OpenAI/Gemini/DeepSeek?</h3>
-            <p><strong>Answer:</strong></p>
-            <ul>
-                <li><strong>OpenAI:</strong> Get API key at <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com/api-keys</a></li>
-                <li><strong>Google Gemini:</strong> Get API key at <a href="https://aistudio.google.com/app/apikey" target="_blank">aistudio.google.com/app/apikey</a></li>
-                <li><strong>DeepSeek:</strong> Get API key at <a href="https://platform.deepseek.com/api_keys" target="_blank">platform.deepseek.com/api_keys</a></li>
-            </ul>
-            <p>Then paste the API key in UnderText Settings > AI & Translation > Choose your provider.</p>
+        <h2>🌍 Translation Features</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ What translation services does UnderText use?</div>
+            <div class="faq-answer">
+                <p>UnderText supports <strong>2 translation services</strong>:</p>
+
+                <div class="highlight">
+                    <strong>1. Apple Translation (Default & Recommended)</strong>
+                    <ul>
+                        <li>On-device processing (100% private)</li>
+                        <li>Works offline</li>
+                        <li>Supports all 20 languages</li>
+                        <li>Requires iOS 26.0+</li>
+                        <li>Free tier: 5 translations/day</li>
+                        <li>Premium: Unlimited</li>
+                    </ul>
+                </div>
+
+                <div class="highlight">
+                    <strong>2. Azure OpenAI GPT-4o-mini (Optional, Premium only)</strong>
+                    <ul>
+                        <li>AI-powered translation</li>
+                        <li>More natural, context-aware translations</li>
+                        <li>Requires your own Azure API key</li>
+                        <li>You control costs (Azure charges separately)</li>
+                        <li>Configure in: Advanced Settings → AI & Translation</li>
+                    </ul>
+                </div>
+
+                <div class="note">
+                    <strong>Note:</strong> UnderText acts as a pass-through for Azure OpenAI. We do not store, log, or process your translation data. Requests go directly from your device to Azure.
+                </div>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>Which translation service should I use?</h3>
-            <p><strong>Answer:</strong></p>
-            <ul>
-                <li><strong>Apple Translation:</strong> Most private (on-device), no API key needed, free, offline capable</li>
-                <li><strong>Microsoft Translator:</strong> 2M free characters/month, good for most users</li>
-                <li><strong>OpenAI GPT:</strong> Best quality, context-aware, costs per usage</li>
-                <li><strong>Google Gemini:</strong> Fast, large context, generous free tier</li>
-                <li><strong>DeepSeek:</strong> Most affordable AI option</li>
-            </ul>
+        <div class="faq-item">
+            <div class="faq-question">❓ What languages are supported?</div>
+            <div class="faq-answer">
+                <p>UnderText supports <strong>20 languages</strong>:</p>
+                <ul style="columns: 2; -webkit-columns: 2; -moz-columns: 2;">
+                    <li>English 🇬🇧</li>
+                    <li>Spanish 🇪🇸</li>
+                    <li>French 🇫🇷</li>
+                    <li>German 🇩🇪</li>
+                    <li>Chinese 🇨🇳</li>
+                    <li>Japanese 🇯🇵</li>
+                    <li>Korean 🇰🇷</li>
+                    <li>Italian 🇮🇹</li>
+                    <li>Portuguese 🇵🇹</li>
+                    <li>Russian 🇷🇺</li>
+                    <li>Arabic 🇸🇦</li>
+                    <li>Hindi 🇮🇳</li>
+                    <li>Vietnamese 🇻🇳</li>
+                    <li>Thai 🇹🇭</li>
+                    <li>Dutch 🇳🇱</li>
+                    <li>Polish 🇵🇱</li>
+                    <li>Turkish 🇹🇷</li>
+                    <li>Swedish 🇸🇪</li>
+                    <li>Indonesian 🇮🇩</li>
+                    <li>Greek 🇬🇷</li>
+                </ul>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>Translation is not working. What should I check?</h3>
-            <p><strong>Answer:</strong> Troubleshooting checklist:</p>
-            <ol>
-                <li>Check if you have an active subscription or trial</li>
-                <li>Make sure "Allow Full Access" is enabled</li>
-                <li>For Apple Translation: Download language packs in iOS Translate app</li>
-                <li>For third-party services: Verify API key is entered correctly</li>
-                <li>Check your internet connection (required for cloud services)</li>
-                <li>Try the "Test Translation" button in Settings</li>
-            </ol>
+        <div class="faq-item">
+            <div class="faq-question">❓ Do I need to set up an Azure API key?</div>
+            <div class="faq-answer">
+                <p><strong>No, it's completely optional!</strong></p>
+                <p>UnderText works great with just Apple Translation (the default). Azure OpenAI is for users who:</p>
+                <ul>
+                    <li>Want AI-powered translation quality</li>
+                    <li>Need more natural, context-aware translations</li>
+                    <li>Already have an Azure account</li>
+                    <li>Don't mind paying Azure directly for API usage</li>
+                </ul>
+                <p>Most users don't need Azure - Apple Translation is excellent and private!</p>
+            </div>
         </div>
 
-        <div class="faq">
-            <h3>Can I get a refund?</h3>
-            <p><strong>Answer:</strong> All purchases are processed through Apple App Store. To request a refund:</p>
-            <ol>
-                <li>Go to <a href="https://reportaproblem.apple.com/" target="_blank">reportaproblem.apple.com</a></li>
-                <li>Sign in with your Apple ID</li>
-                <li>Find UnderText subscription</li>
-                <li>Select "Request a refund"</li>
-            </ol>
-            <p>Refunds are subject to Apple's refund policy.</p>
+        <div class="faq-item">
+            <div class="faq-question">❓ How do I set up Azure OpenAI? (Optional)</div>
+            <div class="faq-answer">
+                <p><strong>Prerequisites:</strong></p>
+                <ul>
+                    <li>Premium UnderText subscription</li>
+                    <li>Azure account with OpenAI access</li>
+                    <li>GPT-4o-mini deployment</li>
+                </ul>
+
+                <p><strong>Setup Steps:</strong></p>
+                <ol>
+                    <li>Open UnderText main app</li>
+                    <li>Expand <strong>Advanced Settings</strong></li>
+                    <li>Tap <strong>"Configure AI Providers"</strong></li>
+                    <li>Enter your Azure OpenAI endpoint and API key</li>
+                    <li>Save</li>
+                </ol>
+
+                <div class="note">
+                    <strong>Security:</strong> Your API key is stored securely in iOS Keychain (hardware encrypted) and never transmitted to UnderText servers.
+                </div>
+            </div>
         </div>
 
-        <h2>Still Need Help?</h2>
-        <p>If your question wasn't answered above, please email us at <a href="mailto:xntuan@icloud.com">xntuan@icloud.com</a> with:</p>
-        <ul>
-            <li>Your iOS version</li>
-            <li>Description of the issue</li>
-            <li>Steps to reproduce the problem</li>
-            <li>Screenshots (if applicable)</li>
-        </ul>
-        <p>We'll get back to you as soon as possible!</p>
+        <h2>⌨️ Keyboard Features</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ What keyboard layouts are available?</div>
+            <div class="faq-answer">
+                <p>UnderText includes <strong>6 keyboard layouts</strong>:</p>
+                <ul>
+                    <li><strong>QWERTY</strong> - Standard English/International</li>
+                    <li><strong>QWERTZ</strong> - German (with ü, ö, ä)</li>
+                    <li><strong>AZERTY</strong> - French (with context-sensitive accents)</li>
+                    <li><strong>Spanish QWERTY</strong> - Spanish (with ñ)</li>
+                    <li><strong>Korean Dubeolsik</strong> - Korean (두벌식 2-set)</li>
+                    <li><strong>Vietnamese Telex</strong> - Vietnamese with Telex input</li>
+                </ul>
+                <p>Enable <strong>"Auto-adjust Layout"</strong> in settings to automatically switch based on your input language.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ How does Vietnamese Telex input work?</div>
+            <div class="faq-answer">
+                <p>Telex is a typing method for Vietnamese characters:</p>
+                <ul>
+                    <li><code>w</code> alone → <code>ư</code></li>
+                    <li><code>aw</code> → <code>ă</code></li>
+                    <li><code>ow</code> → <code>ơ</code></li>
+                    <li><code>aa</code> → <code>â</code></li>
+                    <li><code>ee</code> → <code>ê</code></li>
+                    <li><code>oo</code> → <code>ô</code></li>
+                    <li><code>dd</code> → <code>đ</code></li>
+                </ul>
+                <p><strong>Tone marks:</strong></p>
+                <ul>
+                    <li><code>a + s</code> → <code>á</code> (sắc)</li>
+                    <li><code>a + f</code> → <code>à</code> (huyền)</li>
+                    <li><code>a + r</code> → <code>ả</code> (hỏi)</li>
+                    <li><code>a + x</code> → <code>ã</code> (ngã)</li>
+                    <li><code>a + j</code> → <code>ạ</code> (nặng)</li>
+                </ul>
+                <p><strong>Auto-correction:</strong> <code>ưo</code> → <code>ươ</code> for valid syllables (e.g., "lươn", "tươi")</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ What does "Live translation as you type" mean?</div>
+            <div class="faq-answer">
+                <p>This is a <strong>Premium-only feature</strong> that shows translations in real-time:</p>
+                <ul>
+                    <li>As you type, translation updates every 300ms</li>
+                    <li>Uses Apple on-device translation (private & fast)</li>
+                    <li>No need to tap translate button</li>
+                    <li>Translation appears in preview bar above keyboard</li>
+                </ul>
+                <p>Enable in: <strong>Advanced Settings → Real-time Translation toggle</strong></p>
+                <div class="note">
+                    <strong>Free users:</strong> Must tap the translate button manually (button-only translation).
+                </div>
+            </div>
+        </div>
+
+        <h2>🐛 Troubleshooting</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ Translation isn't working. What should I check?</div>
+            <div class="faq-answer">
+                <ol>
+                    <li><strong>Full Access</strong>: Make sure it's enabled in iOS Settings → General → Keyboard → Keyboards → UnderText</li>
+                    <li><strong>Internet</strong>: Azure OpenAI requires internet (Apple Translation works offline)</li>
+                    <li><strong>Language packs</strong>: For Apple Translation, download language packs in the Translate app</li>
+                    <li><strong>Free quota</strong>: If you've used 5 translations today, you'll need to wait until midnight or upgrade to Premium</li>
+                    <li><strong>iOS version</strong>: Ensure you have iOS 26.0 or later</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ The keyboard isn't showing up</div>
+            <div class="faq-answer">
+                <ol>
+                    <li>Verify UnderText is added: Settings → General → Keyboard → Keyboards</li>
+                    <li>Restart your iPhone</li>
+                    <li>Try switching keyboards by pressing and holding the 🌐 globe icon</li>
+                    <li>Remove and re-add the keyboard if issues persist</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ How do I reset my settings?</div>
+            <div class="faq-answer">
+                <p>In the main app:</p>
+                <ol>
+                    <li>Scroll to the bottom</li>
+                    <li>Tap <strong>"Reset Settings"</strong> in the About section</li>
+                    <li>Confirm</li>
+                </ol>
+                <p>This resets all preferences to defaults but keeps your flashcards and subscription.</p>
+            </div>
+        </div>
+
+        <h2>📚 Learning Features</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ How do flashcards work?</div>
+            <div class="faq-answer">
+                <p>Save vocabulary for later review:</p>
+                <ol>
+                    <li>After translating, tap any word in the translation</li>
+                    <li>Select <strong>"Learn"</strong> (⭐ icon)</li>
+                    <li>Word pair is saved to your flashcard deck</li>
+                    <li>Review in main app → <strong>Flashcards tab</strong></li>
+                </ol>
+                <p>The spaced repetition system automatically schedules reviews for optimal retention.</p>
+            </div>
+        </div>
 
         <div class="footer">
-            <p>&copy; 2025 UnderText. All rights reserved.</p>
-            <p><a href="index.html">Home</a> | <a href="tips.html">Tips & Tricks</a> | <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Use</a> | <a href="support.html">Support</a></p>
+            <p><strong>UnderText</strong> - Privacy-First Multilingual Keyboard</p>
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="privacy.html">Privacy</a> |
+                <a href="terms.html">Terms</a> |
+                <a href="tips.html">Tips</a>
+            </p>
+            <p style="margin-top: 15px;">© 2025 UnderText. All rights reserved.</p>
         </div>
     </div>
 </body>

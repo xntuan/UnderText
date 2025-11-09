@@ -196,7 +196,7 @@
             <div class="faq-answer">
                 <p>Full Access permission is required for:</p>
                 <ul>
-                    <li><strong>AI Translation</strong>: Network access for Azure OpenAI (only if you configure your API key)</li>
+                    <li><strong>AI Translation</strong>: Network access for Azure OpenAI (Premium only)</li>
                     <li><strong>On-Device Translation</strong>: Apple Translation framework (works offline, iOS 26.0+)</li>
                     <li><strong>Word Pronunciation</strong>: On-device speech synthesis</li>
                     <li><strong>Dictionary Lookup</strong>: Word definition API access</li>
@@ -247,8 +247,8 @@
                 <ul>
                     <li>✅ Live translation as you type (real-time, 300ms delay)</li>
                     <li>✅ More daily translations (token-based quota)</li>
-                    <li>✅ Azure OpenAI GPT-4o-mini (optional, requires your API key)</li>
-                    <li>✅ Apple Translation unlimited</li>
+                    <li>✅ Apple Translation always available (fallback when tokens run out)</li>
+                    <li>✅ Azure OpenAI GPT-4o-mini (server-based, Premium only)</li>
                     <li>✅ All keyboard customization options</li>
                     <li>✅ Priority support</li>
                 </ul>
@@ -314,23 +314,23 @@
                         <li>Supports all 20 languages</li>
                         <li>Requires iOS 26.0+</li>
                         <li>Free tier: 5 translations/day</li>
-                        <li>Premium: Unlimited</li>
+                        <li>Premium: More translations (token-based quota, always available as fallback)</li>
                     </ul>
                 </div>
 
                 <div class="highlight">
                     <strong>2. Azure OpenAI GPT-4o-mini (Optional, Premium only)</strong>
                     <ul>
-                        <li>AI-powered translation</li>
+                        <li>Server-based AI translation</li>
                         <li>More natural, context-aware translations</li>
-                        <li>Requires your own Azure API key</li>
-                        <li>You control costs (Azure charges separately)</li>
-                        <li>Configure in: Advanced Settings → AI & Translation</li>
+                        <li>No API keys required from you</li>
+                        <li>Premium subscription required</li>
+                        <li>Token-based daily quota</li>
                     </ul>
                 </div>
 
                 <div class="note">
-                    <strong>Note:</strong> UnderText acts as a pass-through for Azure OpenAI. We do not store, log, or process your translation data. Requests go directly from your device to Azure.
+                    <strong>Note:</strong> Requests go through our secure server which validates your subscription before processing. When tokens run out, you automatically fall back to Apple Translation.
                 </div>
             </div>
         </div>
@@ -365,42 +365,17 @@
         </div>
 
         <div class="faq-item">
-            <div class="faq-question">❓ Do I need to set up an Azure API key?</div>
+            <div class="faq-question">❓ How does Azure OpenAI translation work?</div>
             <div class="faq-answer">
-                <p><strong>No, it's completely optional!</strong></p>
-                <p>UnderText works great with just Apple Translation (the default). Azure OpenAI is for users who:</p>
+                <p><strong>Azure OpenAI is included with Premium - no setup required!</strong></p>
+                <p>When you subscribe to Premium:</p>
                 <ul>
-                    <li>Want AI-powered translation quality</li>
-                    <li>Need more natural, context-aware translations</li>
-                    <li>Already have an Azure account</li>
-                    <li>Don't mind paying Azure directly for API usage</li>
+                    <li>You get access to both Apple Translation AND Azure OpenAI GPT-4o-mini</li>
+                    <li>No API keys needed - it's all handled by UnderText</li>
+                    <li>Premium users receive a daily token quota for Azure translations</li>
+                    <li>When tokens run out, you automatically fall back to Apple Translation</li>
                 </ul>
-                <p>Most users don't need Azure - Apple Translation is excellent and private!</p>
-            </div>
-        </div>
-
-        <div class="faq-item">
-            <div class="faq-question">❓ How do I set up Azure OpenAI? (Optional)</div>
-            <div class="faq-answer">
-                <p><strong>Prerequisites:</strong></p>
-                <ul>
-                    <li>Premium UnderText subscription</li>
-                    <li>Azure account with OpenAI access</li>
-                    <li>GPT-4o-mini deployment</li>
-                </ul>
-
-                <p><strong>Setup Steps:</strong></p>
-                <ol>
-                    <li>Open UnderText main app</li>
-                    <li>Expand <strong>Advanced Settings</strong></li>
-                    <li>Tap <strong>"Configure AI Providers"</strong></li>
-                    <li>Enter your Azure OpenAI endpoint and API key</li>
-                    <li>Save</li>
-                </ol>
-
-                <div class="note">
-                    <strong>Security:</strong> Your API key is stored securely in iOS Keychain (hardware encrypted) and never transmitted to UnderText servers.
-                </div>
+                <p>Most users are happy with Apple Translation alone - it's fast, private, and works offline!</p>
             </div>
         </div>
 

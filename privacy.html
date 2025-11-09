@@ -86,10 +86,9 @@
     </ul>
 
     <h2>2. What We Store Locally (On Your Device Only)</h2>
-    <p>The following data is stored locally on your device and never transmitted to our servers (we don't have servers):</p>
+    <p>The following data is stored locally on your device and never transmitted to our servers:</p>
     <ul>
         <li>✅ App settings (language preferences, keyboard layout)</li>
-        <li>✅ API keys (stored encrypted in iOS Keychain)</li>
         <li>✅ Vocabulary flashcards (optional feature)</li>
         <li>✅ Daily translation quota for free users (5 translations/day)</li>
         <li>✅ Premium subscription status (managed by Apple's StoreKit)</li>
@@ -126,30 +125,20 @@
         <li>✅ Zero data transmission</li>
         <li>✅ Apple does not collect or see your typed text</li>
         <li>✅ Works offline after language models are downloaded</li>
-        <li>✅ Available to all users (free tier: 5 translations/day, Premium: unlimited)</li>
+        <li>✅ Available to all users (free tier: 5 translations/day, Premium: more translations)</li>
+        <li>✅ Always available as fallback (even when Premium tokens run out)</li>
     </ul>
 
     <h3>Option 2: Azure OpenAI GPT-4o-mini (Optional, Premium Only)</h3>
     <ul>
-        <li>⚙️ Requires your own Azure OpenAI API key</li>
-        <li>⚙️ Translation requests go directly from your device to Azure OpenAI</li>
-        <li>⚙️ UnderText acts only as a pass-through - we do not intercept, store, or process this data</li>
-        <li>⚙️ Governed by <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Microsoft Azure's privacy policy</a></li>
-        <li>⚙️ You maintain full control - use of Azure OpenAI is entirely optional</li>
+        <li>⚙️ Server-based AI translation service</li>
+        <li>⚙️ Requests go through our secure server</li>
+        <li>⚙️ No API keys required from you</li>
+        <li>⚙️ Premium subscription required</li>
+        <li>⚙️ Token-based daily quota</li>
     </ul>
 
-    <p><strong>No Other Services:</strong> UnderText does NOT use Microsoft Translator, Google Translate, Google Gemini, DeepSeek, or any other third-party translation services. Only the 2 options above exist.</p>
-
-    <h2>5. API Key Storage</h2>
-    <p>If you choose to use Azure OpenAI translation:</p>
-    <ul>
-        <li>Your API key is stored locally on your device</li>
-        <li>Encrypted using iOS Keychain (hardware-level encryption)</li>
-        <li>Never transmitted to us or any third party</li>
-        <li>You can delete it anytime from the app settings</li>
-    </ul>
-
-    <h2>6. Subscription and Payments</h2>
+    <h2>5. Subscription and Payments</h2>
     <p>All subscription and payment processing is handled exclusively by Apple through StoreKit 2:</p>
     <ul>
         <li>We do not have access to your payment information</li>
@@ -164,24 +153,24 @@
         <li>Yearly: $24/year (3-day FREE trial, save 33%)</li>
     </ul>
 
-    <h2>7. Data Sharing</h2>
+    <h2>6. Data Sharing</h2>
     <p><strong>We do not share any data because we do not collect any data.</strong></p>
-    <p>The only external connection is if you choose to configure Azure OpenAI translation using your own API key - in which case, translation requests go directly from your device to Azure OpenAI, bypassing our systems entirely.</p>
+    <p>The only external connection is if you use Azure OpenAI translation (Premium only) - in which case, translation requests go through our secure server which validates your subscription before processing.</p>
 
-    <h2>8. Children's Privacy</h2>
+    <h2>7. Children's Privacy</h2>
     <p>UnderText does not collect data from anyone, including children under 13. Our app is safe for all ages.</p>
 
-    <h2>9. Changes to This Policy</h2>
+    <h2>8. Changes to This Policy</h2>
     <p>If we update this privacy policy, we will post the new version here with an updated "Last Updated" date. We recommend checking this page periodically.</p>
 
-    <h2>10. Third-Party Services Privacy Policies</h2>
-    <p>If you choose to use optional third-party services, please review their privacy policies:</p>
+    <h2>9. Third-Party Services Privacy Policies</h2>
+    <p>Please review the privacy policies of services used by the app:</p>
     <ul>
         <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a> (for on-device translation and StoreKit)</li>
-        <li><a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Microsoft Azure Privacy Policy</a> (only if you configure Azure OpenAI)</li>
+        <li><a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Microsoft Azure Privacy Policy</a> (for Premium Azure OpenAI translation)</li>
     </ul>
 
-    <h2>11. Contact Us</h2>
+    <h2>10. Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at:</p>
     <p><strong>Email:</strong> <a href="mailto:xntuan@icloud.com">xntuan@icloud.com</a></p>
 

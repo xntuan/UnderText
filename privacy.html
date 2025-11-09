@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - UnderText</title>
+    <title>UnderText - Privacy Policy</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -14,12 +14,12 @@
             color: #333;
         }
         h1 {
-            color: #007AFF;
+            color: #1a1a1a;
             border-bottom: 2px solid #007AFF;
             padding-bottom: 10px;
         }
         h2 {
-            color: #555;
+            color: #007AFF;
             margin-top: 30px;
         }
         .highlight {
@@ -29,154 +29,128 @@
             margin: 20px 0;
         }
         .last-updated {
-            color: #888;
+            color: #666;
+            font-size: 0.9em;
             font-style: italic;
         }
         ul {
-            margin: 10px 0;
+            padding-left: 20px;
         }
         li {
-            margin: 8px 0;
-        }
-        a {
-            color: #007AFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .footer {
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            text-align: center;
-            color: #888;
-        }
-        .ios-requirement {
-            background-color: #fff3cd;
-            padding: 10px;
-            border-left: 4px solid #ffc107;
-            margin: 15px 0;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
     <h1>Privacy Policy</h1>
-    <p class="last-updated">Last Updated: January 2025</p>
+    <p class="last-updated">Last Updated: November 2025</p>
 
     <div class="highlight">
-        <strong>Our commitment:</strong> UnderText is built with privacy as our foundation. We do not collect, store, or transmit any of your data. Period.
+        <strong>Our Commitment:</strong> UnderText is a keyboard app designed for language learners. We collect minimal data necessary to provide translation services. Your privacy is our priority.
     </div>
 
-    <div class="ios-requirement">
-        <strong>System Requirement:</strong> UnderText requires iOS 26.0 or later to function properly.
-    </div>
+    <h2>1. Data We Collect</h2>
 
-    <h2>1. What Data We Collect</h2>
-    <p><strong>We collect ZERO data.</strong></p>
-    <p>UnderText does not collect, store, or transmit:</p>
+    <h3>1.1 Translation Data (Premium Feature Only)</h3>
+    <p>When you use Azure AI translation (Premium subscription only), we transmit the following data to our secure Azure backend:</p>
     <ul>
-        <li>❌ Keystrokes or anything you type</li>
-        <li>❌ Personal information</li>
-        <li>❌ Analytics or usage data</li>
-        <li>❌ Device information</li>
-        <li>❌ Location data</li>
-        <li>❌ Contact lists or photos</li>
-        <li>❌ Any telemetry or tracking data</li>
+        <li><strong>Text for Translation:</strong> The specific text you choose to translate (not all your keystrokes)</li>
+        <li><strong>Language Pair:</strong> Source and target languages you select</li>
+        <li><strong>Anonymous Device Identifier:</strong> A random UUID to validate your subscription status</li>
+        <li><strong>App Version:</strong> For technical support and compatibility</li>
     </ul>
 
-    <h2>2. What We Store Locally (On Your Device Only)</h2>
-    <p>The following data is stored locally on your device and never transmitted to our servers:</p>
+    <p><strong>How We Use This Data:</strong></p>
     <ul>
-        <li>✅ App settings (language preferences, keyboard layout)</li>
-        <li>✅ Vocabulary flashcards (optional feature)</li>
-        <li>✅ Daily translation quota for free users (5 translations/day)</li>
-        <li>✅ Premium subscription status (managed by Apple's StoreKit)</li>
+        <li>To provide real-time AI translation service</li>
+        <li>To validate your Premium subscription status</li>
+        <li>To ensure service quality and prevent abuse</li>
     </ul>
 
-    <h2>3. Full Access Permission</h2>
-    <p>iOS requires keyboard apps to request "Full Access" permission for certain features. Here's exactly what we use it for:</p>
+    <p><strong>Data Retention:</strong> Translation requests are processed in real-time and not permanently stored. Server logs may retain anonymous usage metrics (request count, timestamp) for up to 30 days for system maintenance.</p>
 
-    <h3>What Full Access Enables:</h3>
+    <h3>1.2 Data Stored Locally (On Your Device Only)</h3>
+    <p>The following data never leaves your device:</p>
     <ul>
-        <li><strong>Network access for Azure OpenAI translation</strong> - Only if you configure your own API key (optional)</li>
-        <li><strong>On-device Apple Translation</strong> - Completely private, processed locally on your device (iOS 26.0+)</li>
-        <li><strong>Speech synthesis</strong> - For word pronunciation feature</li>
-        <li><strong>Dictionary API access</strong> - For word definition lookups</li>
+        <li>App settings (language preferences, keyboard layouts)</li>
+        <li>Vocabulary flashcards (if you create them)</li>
+        <li>Free translation quota tracking (5 translations/day for free users)</li>
+        <li>Premium subscription status (managed by Apple StoreKit)</li>
     </ul>
 
-    <h3>What We DO NOT Do:</h3>
+    <h2>2. Data We Do NOT Collect</h2>
+    <p>We explicitly do NOT collect, store, or transmit:</p>
     <ul>
-        <li>❌ NO keystroke tracking or logging</li>
-        <li>❌ NO data collection or analytics</li>
-        <li>❌ NO third-party data sharing (except your chosen Azure API if configured)</li>
-        <li>❌ NO advertisements</li>
-        <li>❌ NO selling your data</li>
+        <li>Your keystrokes (except text you explicitly choose to translate)</li>
+        <li>Personal information (name, email, phone number, address)</li>
+        <li>Location data</li>
+        <li>Contacts, photos, or other device content</li>
+        <li>Browsing history or app usage outside UnderText</li>
+        <li>Biometric data</li>
+        <li>Financial information (payments handled by Apple)</li>
     </ul>
 
-    <p><strong>Important:</strong> Even with Full Access enabled, we do not track, log, or store anything you type. The permission is solely for the features listed above.</p>
-
-    <h2>4. Translation Services</h2>
-    <p>UnderText offers exactly 2 translation options. You choose which one to use:</p>
-
-    <h3>Option 1: Apple Translation (Default & Recommended)</h3>
+    <h2>3. How We Protect Your Data</h2>
     <ul>
-        <li>✅ Completely private and on-device (iOS 26.0+)</li>
-        <li>✅ Zero data transmission</li>
-        <li>✅ Apple does not collect or see your typed text</li>
-        <li>✅ Works offline after language models are downloaded</li>
-        <li>✅ Available to all users (free tier: 5 translations/day, Premium: more translations)</li>
-        <li>✅ Always available as fallback (even when Premium tokens run out)</li>
+        <li><strong>Encryption:</strong> All data transmitted to our servers uses HTTPS/TLS encryption</li>
+        <li><strong>Anonymization:</strong> Device identifiers are randomized UUIDs, not linked to your personal identity</li>
+        <li><strong>No Tracking:</strong> We do not use analytics, advertising SDKs, or tracking pixels</li>
+        <li><strong>Secure Infrastructure:</strong> Azure backend follows industry-standard security practices</li>
     </ul>
 
-    <h3>Option 2: Azure OpenAI GPT-4o-mini (Optional, Premium Only)</h3>
+    <h2>4. Third-Party Services</h2>
+
+    <h3>4.1 Azure OpenAI (Premium Feature)</h3>
+    <p>Translation requests use Azure OpenAI API. Microsoft's privacy policy applies to data processed by their services. Learn more: <a href="https://privacy.microsoft.com/">Microsoft Privacy Statement</a></p>
+
+    <h3>4.2 Apple Services</h3>
     <ul>
-        <li>⚙️ Server-based AI translation service</li>
-        <li>⚙️ Requests go through our secure server</li>
-        <li>⚙️ No API keys required from you</li>
-        <li>⚙️ Premium subscription required</li>
-        <li>⚙️ Token-based daily quota</li>
+        <li><strong>Apple Translation:</strong> Free tier uses Apple's on-device Translation framework (data never leaves your device)</li>
+        <li><strong>StoreKit:</strong> Premium subscriptions managed by Apple (Apple's privacy policy applies)</li>
     </ul>
 
-    <h2>5. Subscription and Payments</h2>
-    <p>All subscription and payment processing is handled exclusively by Apple through StoreKit 2:</p>
+    <h3>4.3 Free Dictionary API</h3>
+    <p>English word definitions use Free Dictionary API (open-source, no data retention). Learn more: <a href="https://dictionaryapi.dev/">Free Dictionary API</a></p>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do NOT sell, rent, or share your data with third parties for marketing purposes.</p>
+
+    <p><strong>Limited Sharing:</strong> Data is only shared with:</p>
     <ul>
-        <li>We do not have access to your payment information</li>
-        <li>We do not store credit card details</li>
-        <li>Apple's privacy policy governs all transactions</li>
-        <li>Your subscription status is verified locally through Apple's APIs</li>
+        <li>Azure OpenAI (for translation processing only)</li>
+        <li>Apple (for subscription management only)</li>
     </ul>
 
-    <p><strong>Pricing:</strong></p>
+    <h2>6. Your Rights</h2>
+
+    <h3>6.1 Data Access & Deletion</h3>
     <ul>
-        <li>Monthly: $3/month (no trial, immediate payment)</li>
-        <li>Yearly: $24/year (3-day FREE trial, save 33%)</li>
+        <li><strong>Translation Data:</strong> Not permanently stored; requests processed in real-time</li>
+        <li><strong>Local Data:</strong> Delete the app to remove all local data</li>
+        <li><strong>Server Logs:</strong> Contact us to request deletion of any server-side logs associated with your device ID</li>
     </ul>
 
-    <h2>6. Data Sharing</h2>
-    <p><strong>We do not share any data because we do not collect any data.</strong></p>
-    <p>The only external connection is if you use Azure OpenAI translation (Premium only) - in which case, translation requests go through our secure server which validates your subscription before processing.</p>
+    <h3>6.2 Opt-Out</h3>
+    <ul>
+        <li>Use Free tier (Apple Translation) to avoid sending data to our servers</li>
+        <li>Disable "Allow Full Access" to use keyboard without translation features</li>
+        <li>Cancel Premium subscription anytime through Apple subscriptions</li>
+    </ul>
 
     <h2>7. Children's Privacy</h2>
-    <p>UnderText does not collect data from anyone, including children under 13. Our app is safe for all ages.</p>
+    <p>UnderText is rated 4+ and suitable for all ages. We do not knowingly collect data from children under 13. If you believe a child has provided data, contact us immediately.</p>
 
-    <h2>8. Changes to This Policy</h2>
-    <p>If we update this privacy policy, we will post the new version here with an updated "Last Updated" date. We recommend checking this page periodically.</p>
+    <h2>8. Contact Us</h2>
+    <p>If you have questions about this privacy policy or want to exercise your rights, contact us at: support@undertext.app</p>
 
-    <h2>9. Third-Party Services Privacy Policies</h2>
-    <p>Please review the privacy policies of services used by the app:</p>
-    <ul>
-        <li><a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a> (for on-device translation and StoreKit)</li>
-        <li><a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Microsoft Azure Privacy Policy</a> (for Premium Azure OpenAI translation)</li>
-    </ul>
-
-    <h2>10. Contact Us</h2>
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><strong>Email:</strong> <a href="mailto:xntuan@icloud.com">xntuan@icloud.com</a></p>
-
-    <div class="footer">
-        <p><a href="index.html">Home</a> | <a href="terms.html">Terms of Use</a> | <a href="support.html">Support</a> | <a href="tips.html">Tips & Tricks</a></p>
-        <p>&copy; 2025 UnderText. All rights reserved.</p>
+    <div class="highlight">
+        <strong>Summary:</strong> UnderText collects minimal data (only translation text and anonymous device ID) when you use Premium AI translation. Free users transmit no data to our servers. We never collect personal information, track your behavior, or sell your data.
     </div>
+
+    <hr>
+    <p style="text-align: center; color: #999; font-size: 0.9em;">
+        UnderText - Smart Keyboard for Language Learners<br>
+        © 2025 Nguyen Xuan Tuan. All rights reserved.
+    </p>
 </body>
 </html>
